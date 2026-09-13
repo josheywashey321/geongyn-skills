@@ -76,17 +76,21 @@ You *are* one of the assistants their buyers ask, so this is a real reference. I
 
 ## The persuasion layer (the "hack" — applied to real findings only)
 
-Named mechanics to build in, in roughly this order:
+**The canonical framework is the `chaseframe` skill** ([raw](https://raw.githubusercontent.com/josheywashey321/geongyn-skills/master/skills/chaseframe/SKILL.md)) — Chase Hughes' behavioral influence system (FATE: Focus → Authority → Tribe → Emotion), with the sourced frameworks, the six social needs and their paired fears, the four decision filters, and the full technique library. Read it when building a scorecard; it goes deeper than this summary on every point below. If it isn't installed, the condensed list here stands on its own.
 
-- **Attention direction** — lead with the single number. It frames everything after it and controls what they fixate on.
-- **Authority** — a real methodology, precise findings, the exact queries. Expertise they can't self-diagnose positions you as the one who sees what they can't.
-- **Contrast + social proof** — the leaderboard: competitors named, they're not. Make the gap visceral with real names.
-- **Loss aversion / status-quo cost** — every buyer who asks and doesn't hear their name is a quote a competitor gets instead. Honest, concrete, ongoing.
+The scorecard runs the FATE ladder in document form, and the mechanics land in roughly this order:
+
+- **Attention direction (Focus)** — lead with the single number. It frames everything after it and controls what they fixate on.
+- **Authority** — a real methodology, precise findings, the exact queries. Expertise they can't self-diagnose positions you as the one who sees what they can't. Hughes' *agentic shift*: in the presence of credited authority, the reader transfers responsibility for the decision — which quietly removes objections you never addressed.
+- **Contrast + social proof (Tribe)** — the leaderboard: competitors named, they're not. Make the gap visceral with real names. Tribe means *businesses like them* — a same-town rival lands harder than a national brand.
+- **Loss aversion / status-quo cost (Emotion)** — every buyer who asks and doesn't hear their name is a quote a competitor gets instead. Honest, concrete, ongoing. **This is the rung a diagnostic most often skips**, and skipping it is why a prospect can agree with every finding and still not book.
 - **Specificity = credibility** — real queries, real competitor names, the actual broken details (e.g. placeholder text still on their site). Specifics are believed; generalities aren't.
 - **Open loops** — each finding names the problem and implies a fix exists, pulling them forward to the next section (Zeigarnik effect).
 - **Future pacing** — briefly let them picture the after-state: their name in the answers.
 - **Anchoring** — the low score anchors the pain; the fix path is the relief.
 - **One small yes** — close on a low-friction next step (a short call), not a big commitment.
+
+**Match the paired fear to the buyer.** For the building-products ICP the reader is usually running *intelligence* (fear: being seen as having specified wrong) on a *conformity* or *investment* filter — so the scorecard persuades through data, standards and account math, never through hype. See `chaseframe`'s need→language table.
 
 Chase-Hughes-style throughline: direct attention, establish authority, frame around their fear (being passed over) and desire (being the one chosen) — but every lever pulls on a true finding.
 

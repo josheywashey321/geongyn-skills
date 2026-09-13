@@ -1,7 +1,7 @@
 {
   "name": "geongyn-skills",
-  "version": "1.1.0",
-  "description": "Geongyn GEO + prospecting skills for Claude Code: clientreview, coldemail, personalreview.",
+  "version": "1.2.0",
+  "description": "Geongyn GEO + prospecting skills for Claude Code: chaseframe, clientreview, coldemail, personalreview.",
   "author": {
     "name": "Geongyn"
   }
