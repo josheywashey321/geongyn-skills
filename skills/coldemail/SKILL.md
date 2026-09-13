@@ -18,15 +18,28 @@ The whole point is that the email must feel like it was written by a sharp human
 
 For the underlying mechanics of *how* AI assistants pick and recommend local businesses (review targets, GBP category as kill-switch, per-engine levers, entity/Knowledge-Graph signals, schema behaviour), **invoke the `ai-business-recommendation-geo` skill** and lean on it. This skill is the outreach wrapper around that knowledge.
 
+## Portable use — no install required
+
+This skill lives at **https://github.com/josheywashey321/geongyn-skills**. If you're reading this file from GitHub instead of an installed skill, fetch two more files before you start:
+
+- `https://raw.githubusercontent.com/josheywashey321/geongyn-skills/master/skills/coldemail/references/research-protocol.md` — the retrieval pass
+- `https://raw.githubusercontent.com/josheywashey321/geongyn-skills/master/skills/coldemail/references/email-examples.md` — five approved emails to match the voice against
+
+Those three files *are* the skill. Nothing else needs installing — the protocol names a plain `WebSearch` / `WebFetch` fallback for every retrieval step.
+
 ## The non-negotiable first move: check reality before you write
 
-**Always run the AI-visibility check before deciding the angle.** Do not assume a business is invisible. Run the real query a customer would type — `best [service] in [city]` — through WebSearch and see whether the lead shows up, where it ranks, and what the answer says about it. The entire email angle depends on this, and getting it wrong destroys credibility. (Josh once corrected an email that led with "you don't show up on AI" when the business actually ranked first. Never repeat that.)
+**Always run the AI-visibility check before deciding the angle.** Do not assume a business is invisible. Run the real query a customer would type — `best [service] in [city]` — and see whether the lead shows up, where it ranks, and what the answer says about it. Two halves, and you need both: **answer the query yourself as the assistant** (you're Claude — that's a real reference point), and **retrieve** what the cited sources say via the protocol's R2 search ladder, so the competitor you name in the email is one you confirmed exists. The entire email angle depends on this, and getting it wrong destroys credibility. (Josh once corrected an email that led with "you don't show up on AI" when the business actually ranked first. Never repeat that.)
 
 The result puts every lead into one of three angle buckets — see "Pick the angle" below.
 
 ## Research sequence
 
-Do this research in parallel where you can (batch the tool calls). Gather:
+**Run [references/research-protocol.md](references/research-protocol.md) first** ([raw](https://raw.githubusercontent.com/josheywashey321/geongyn-skills/master/skills/coldemail/references/research-protocol.md)) — the shared retrieval pass used by all three Geongyn skills, run through the **agent-reach** skill where it's available (Jina Reader on their site, Exa for the category, Reddit for community signal, LinkedIn for size). Not installed? Its `WebSearch` / `WebFetch` fallback covers every step, which is what the list below already assumes.
+
+The one step worth adding to your habits: **fetch their site through Jina Reader (protocol R1), not just WebFetch.** Jina shows you what an assistant can actually extract — if it comes back thin while the site looks fine in a browser, you've found a concrete, quotable gap for the email instead of a generic "your site could be more visible."
+
+Then gather, in parallel where you can (batch the tool calls):
 
 1. **The website** (WebFetch): exact business name, services, city/address, phone, email, owner/staff names + credentials, hours, booking method, pricing, socials, and a critical read of the site itself — platform (WordPress/GoDaddy/Wix/custom?), modern or dated, mobile, content structure, CTA quality, conversion/SEO gaps, schema/FAQ presence.
 2. **The AI-visibility check** (WebSearch): `best [service] in [city]` — who shows up, in what order, what the AI says about them, and which competitor (if any) it favours and why (awards? "largest"? more reviews?).
@@ -71,7 +84,7 @@ When in doubt about voice, read `references/email-examples.md` — five real, ap
 
 Produce all of this, in this order. Josh likes the research rendered as compact tables/snapshots.
 
-1. **Research snapshot** — a two-column table: business, location, contact, owner, socials, reviews, website. Flag standout facts.
+1. **Research snapshot** — a two-column table: business, location, contact, owner, socials, reviews, website. Flag standout facts, and mark anything you could not verify as unverified rather than filling the cell with a guess — a wrong review count or a competitor that doesn't exist is the fastest way to lose a lead in the reply.
 2. **AI-visibility check** — a plain-language mini-audit table with columns **Item · Finding · Health · Next action**, using 🟢/🟡/🔴 for health. Always cover: do they appear, where they rank, review strength, the key gap, and schema. Finish with a one-line "honest read" that states the angle.
 3. **The email** — subject + 1–2 alternate subjects, then the full body ready to send, then a short *italic* note explaining why it works (the hook, the villain, the close).
 4. **What to pitch** — the tailored offer stack, ordered, matched to the angle and the site's real state.

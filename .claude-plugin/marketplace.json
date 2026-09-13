@@ -5,14 +5,14 @@
   },
   "metadata": {
     "description": "Geongyn's GEO + prospecting skills for Claude Code",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "geongyn-skills",
       "source": "./",
       "description": "Geongyn GEO + prospecting skills: clientreview (client-facing AI visibility scorecard), coldemail (URL-to-outreach workflow), personalreview (internal prospect quoting).",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "Geongyn"
       }

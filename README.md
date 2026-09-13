@@ -11,6 +11,21 @@ Geongyn's GEO + prospecting skills for [Claude Code](https://claude.com/claude-c
 
 Restart Claude Code afterward so the skills load.
 
+## Use without installing (phone, borrowed machine, claude.ai)
+
+No plugin, no marketplace, no restart. Paste a link and tell Claude to follow it:
+
+> Read this skill and use it on [business + URL]:
+> `https://raw.githubusercontent.com/josheywashey321/geongyn-skills/master/skills/personalreview/SKILL.md`
+
+Each skill is self-contained — the SKILL.md tells Claude which other file to fetch, and every file is a raw URL on this repo.
+
+| Skill | Paste this URL |
+|---|---|
+| `clientreview` | `https://raw.githubusercontent.com/josheywashey321/geongyn-skills/master/skills/clientreview/SKILL.md` |
+| `coldemail` | `https://raw.githubusercontent.com/josheywashey321/geongyn-skills/master/skills/coldemail/SKILL.md` |
+| `personalreview` | `https://raw.githubusercontent.com/josheywashey321/geongyn-skills/master/skills/personalreview/SKILL.md` |
+
 ## What's inside
 
 | Skill | What it does |
@@ -20,3 +35,16 @@ Restart Claude Code afterward so the skills load.
 | `personalreview` | Internal prospect review + quoting: fit check, prioritized jobs, good-better-best packages, and margin math. |
 
 > **Heads-up:** `personalreview` contains internal quoting and margin logic. Installing this plugin makes that logic readable to anyone who installs it.
+
+## How they research a prospect
+
+All three run one shared **[research protocol](https://raw.githubusercontent.com/josheywashey321/geongyn-skills/master/skills/personalreview/references/research-protocol.md)** — a defined retrieval pass rather than a vague "look them up":
+
+1. `agent-reach doctor --json` — see which channels are actually live
+2. **Jina Reader on the prospect's site** — measures what an AI assistant can genuinely extract from it, which is the site-readability finding rather than a guess about it
+3. Exa search — who the cited sources name instead
+4. Reddit / LinkedIn — community signal and company size
+
+This runs through the [agent-reach](https://github.com/Panniantong/Agent-Reach) skill when it's installed. **It is not required.** Every step names a plain `WebSearch` / `WebFetch` fallback, so the skills work unchanged on a machine that has never heard of agent-reach.
+
+Every finding is tagged `[retrieved]`, `[live prompt]`, or `[inferred]`. Only the first two may become a number, a score, or a named competitor on anything a client sees — an unverified figure on a scorecard is the one mistake that costs the account.

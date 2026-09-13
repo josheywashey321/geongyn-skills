@@ -9,6 +9,14 @@ description: Produce a client-facing AI Visibility Scorecard for a prospect — 
 
 This replaces the old proposal format. The engine underneath is still `/personalreview` (reuse its research + packages); this is how the findings get presented to the buyer.
 
+## Portable use — no install required
+
+This skill lives at **https://github.com/josheywashey321/geongyn-skills**. If you're reading this file from GitHub instead of an installed skill, fetch one more file before you start:
+
+`https://raw.githubusercontent.com/josheywashey321/geongyn-skills/master/skills/clientreview/references/research-protocol.md`
+
+Those two files *are* the skill. Nothing else needs installing — the protocol names a plain `WebSearch` / `WebFetch` fallback for every retrieval step.
+
 ## Invocation
 
 `/clientreview [business name] [website] — [category], [city]`
@@ -20,6 +28,18 @@ If a field is missing, research it. Don't ask Josh to fill in what you can find.
 **Every number and finding is real, pulled from an actual scan. Urgency is the genuine cost of staying invisible — never invented scarcity.**
 
 Why this is non-negotiable (and not just ethics): a specific, true diagnosis is what gives it authority and what survives the prospect pushing back. A fabricated score or fake "2 spots left" is what gets an agency caught and killed on trust. Real findings, framed well, out-persuade hype every time. This also keeps it inside Geongyn's verified-claims standard.
+
+### How the scan is actually run
+
+**Run [references/research-protocol.md](references/research-protocol.md)** ([raw](https://raw.githubusercontent.com/josheywashey321/geongyn-skills/master/skills/clientreview/references/research-protocol.md)) before scoring anything. It's the shared retrieval pass, run through the **agent-reach** skill where available: `agent-reach doctor --json` for what's live, **Jina Reader on their site to measure what an AI can actually extract**, Exa for who the cited sources name, Reddit for community signal. No agent-reach on this machine? The protocol's `WebSearch` / `WebFetch` fallback covers every step.
+
+This is what makes the rule above enforceable rather than aspirational. Each finding carries a tag:
+
+- `[retrieved]` — pulled off the internet this run
+- `[live prompt]` — you answered the buyer's query as the assistant (legitimate primary evidence — you *are* one of the assistants their buyers ask)
+- `[inferred]` — neither
+
+**Only `[retrieved]` and `[live prompt]` findings may become a number on this page**, or a named competitor, or a review count. An `[inferred]` read can shape the wording; it can never be printed as fact. When a channel is down, the honest line is that the signal is unverified — never a plausible-looking figure. A fabricated number is the one failure this document cannot survive.
 
 **Retired figures — never use.** The v1.0 team doc's unverified stats are banned from anything that could reach a client: "60%+ ask AI", "41% from listicles", "14.2% vs 2.8%", "+40%", "3x", and star-filter thresholds.
 
@@ -74,10 +94,11 @@ Chase-Hughes-style throughline: direct attention, establish authority, frame aro
 
 1. **The Score** — big, top of page. AI Visibility Score: __/100 — [Band]. One line: this is how likely a buyer's AI assistant is to name you today.
 2. **Where you stand** — run several real buyer prompts (3–5) and report the client's placement across all of them as a hit-rate. Rules:
+   - **Every competitor you name must be `[retrieved]`** — confirmed to exist via the protocol's R2 search, not recalled from training. Naming a company that doesn't operate in their market is how the whole scorecard loses its authority in one line.
    - **Format:** competitor names as clean bullets, **one per line** — never a run-on sentence or block quote. Tag pointed ones (e.g. a same-town rival).
    - **Named in none** → show one representative prompt's list with the client visibly absent, then a single bold line: not named in any of the prompts we ran.
    - **Named in one or more** → lead with their **best** result: the single prompt where they showed up (or ranked highest). Display that list with them in it, then state plainly it was the *only* prompt that surfaced them and list the ones that didn't. Label it explicitly a **best-case scenario**, and name the fragility — change the wording and they disappear. This is the gut-punch, and it's real because you actually ran the prompts.
-3. **What we scanned** — the exact buyer questions run + that you ran them through the AI directly. Brief = methodology and authority. (This is the "report" cover.)
+3. **What we scanned** — the exact buyer questions run, that you ran them through the AI directly, and — in plain language — that you also read their site the way an assistant reads it and searched the sources those assistants cite. Brief = methodology and authority. (This is the "report" cover.) **Never name a tool** — no "Jina", "Exa", "agent-reach", no CLI anything. The client hears *what* was examined, never *with what*.
 4. **What's holding you back** — the per-dimension rundown. Each line: the score, what's wrong in plain words, and what it's costing them. This is the body and the credibility.
 5. **The cost of staying here** — honest loss-aversion. Not doom; just the real math of invisibility.
 6. **How each gap closes** — reassure them every issue is fixable, and describe the path in *outcome* terms, not products: get readable → get into the sources AI trusts → get named and stay named. **No prices, no package menu, no tier names with numbers.** The specific plan is built live on the call — that's what the next step is for.

@@ -7,6 +7,14 @@ description: Internal-only prospect review and quote for Geongyn — fit check, 
 
 **This is the internal-only version. Never send any part of it to a prospect.** It does the honest assessment: fit, real work needed, package scope, price with margin math, and a take/raise/pass verdict. The client-facing `/clientreview` is a filtered, polished view of sections 2–4 plus one price.
 
+## Portable use — no install required
+
+This skill lives at **https://github.com/josheywashey321/geongyn-skills**. If you're reading this file from GitHub instead of an installed skill, fetch one more file before you start:
+
+`https://raw.githubusercontent.com/josheywashey321/geongyn-skills/master/skills/personalreview/references/research-protocol.md`
+
+Those two files *are* the skill. Nothing else needs installing — the protocol names a plain `WebSearch` / `WebFetch` fallback for every retrieval step.
+
 ## Invocation
 
 `/personalreview [business name] [website] — [category], [city]`
@@ -18,7 +26,8 @@ If a field is missing, research it. Don't ask Josh to fill in what you can find.
 
 1. The **ai-business-recommendation-geo** skill — for how engines actually retrieve and who gets recommended. Follow its priority order (GBP + reviews first for local; **for the primary building-products ICP the order is different — see the addendum at the end**; listicles are *corroboration only*, never a primary lever).
 2. **`C:\Users\joshr\geongyn-marketing\plan\final_plan.md`** — for ICP (§2), pricing logic (§8), and positioning. This is the live source. Section 2 also carries the correction that building products is *not* an unoccupied vertical — never pitch it as empty.
-3. Live research on the prospect (below).
+3. **[references/research-protocol.md](references/research-protocol.md)** ([raw](https://raw.githubusercontent.com/josheywashey321/geongyn-skills/master/skills/personalreview/references/research-protocol.md)) — the shared retrieval pass: which agent-reach channels to run, in what order, and how to tag what each finding is worth.
+4. Live research on the prospect (Step 0 below).
 
 > **Note, 2026-07-28:** earlier versions of this skill cited a `geongyn-context.md` v1.2 as source #2. **That document could not be located** — not in Drive, not locally — and Josh confirmed he has no record of it either. It has been replaced by the plan file above, which is real, current, and version-controlled. Do not go looking for it.
 
@@ -30,6 +39,10 @@ If a field is missing, research it. Don't ask Josh to fill in what you can find.
 - "Content" in this skill always means **on-site website/blog content** published on the client's own domain, for the AI content-freshness signal — never social.
 
 ## Step 0 — Silent research pass (do this before writing anything)
+
+**Run [references/research-protocol.md](references/research-protocol.md) first** ([raw](https://raw.githubusercontent.com/josheywashey321/geongyn-skills/master/skills/personalreview/references/research-protocol.md)). It's the shared retrieval pass, run through the **agent-reach** skill where it's available: `agent-reach doctor --json` to see which channels are live, **Jina Reader on their site to measure what an AI can actually extract from it**, Exa for who the sources name instead, Reddit for community signal, LinkedIn for size. Announce in one line which channels you're using. If agent-reach isn't installed, the protocol's `WebSearch` / `WebFetch` fallback covers every step — don't skip the pass.
+
+**Tag every finding** `[retrieved]`, `[live prompt]` or `[inferred]`. Internally `[inferred]` is allowed and often useful — but it has to be *labelled*, because `/clientreview` reads this research and cannot put an unverified number in front of a buyer.
 
 Gather, quietly:
 
@@ -44,7 +57,7 @@ Gather, quietly:
   - **Broad** — generic, category-agnostic intent ("best metal roofing"). Usually the wrong intent and unwinnable — they compete against the whole landscape.
   - **Mid** — specific enough to signal their lane, broad enough to carry real buying volume ("metal roofing supplier near [town]"). **The target.**
   - **Narrow** — exact category/product ("standing seam manufacturer"). They may win here, but volume is thin.
-  - Capture **who's named instead** at each rung (that's the hook), and identify the **mid-band** — where discovery intent meets winnability — as the real goal. Typical pattern: *buried when broad, wins when narrow → aim at the mid.*
+  - Capture **who's named instead** at each rung (that's the hook) — then **corroborate those names via the protocol's R2 search** so you're naming competitors confirmed to exist, not ones recalled from training, and identify the **mid-band** — where discovery intent meets winnability — as the real goal. Typical pattern: *buried when broad, wins when narrow → aim at the mid.*
   - *Two fronts:* if they have both a physical location and a shippable product, "near me"/local queries hit the **local GBP front**, product queries hit the **product front** — score them separately. And **"near me" queries are the most location-grounded**, so a cold read is a weaker proxy — flag those for live validation in a location-grounded assistant.
 - **Size / spend signals:** apparent revenue band, # locations, and marketing spend (Meta Ad Library — active ads = real budget = qualified).
 
@@ -229,6 +242,8 @@ Skimmable, concise, plain-language. **All the important info sits at the top** s
 4. **🧾 JOB PRICE SHEET** — the one-time / recurring T-charts. Only surfaced if they ask.
 5. **🔒 INTERNAL — quote math** — clearly walled off. Never show the prospect.
 6. **🔒 INTERNAL — watch-outs** — clearly walled off.
+
+Open the first 🔒 internal block with a one-line **research provenance** note — which channels ran, which didn't, and what's therefore unverified (e.g. *"Site via Jina; category via Exa; Reddit unavailable — community signal unverified"*). It tells Josh how much weight the findings carry on a call, and tells `/clientreview` what it's allowed to print.
 
 Rules: prices always visible next to what they buy. Every client-facing line uses plain words a layperson gets — no GEO jargon. Keep each block tight; depth lives in the internal sections, not the pitch. Mark all internal blocks with 🔒 so nothing confidential gets shown by accident.
 
