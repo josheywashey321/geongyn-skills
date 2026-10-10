@@ -6,9 +6,10 @@ Copy cannot read anyone. 6MX is a live, one-on-one read: baseline the person, wa
 
 **So you profile the segment, not the person** — and you commit. Before writing a word, fix three things:
 
-1. **Dominant need** (of the six) for this buyer type
+1. **Dominant need** (of the six, 2018 map) for this buyer type
 2. **Paired fear** — which is the sharper lever
-3. **Decision filter** — how they justify a yes
+3. **Decision style** (of six) — how they justify a yes
+4. **Identity line** — who they want to be, about 10% ahead of how they see themselves now (A-B8L)
 
 Write them down. Every line answers to them.
 
@@ -21,11 +22,11 @@ Starting points, not conclusions — verify against real customer language.
 | Buyer | Likely need | Paired fear | Filter |
 |---|---|---|---|
 | Spec-writer / architect | Intelligence | Being seen as dumb — specifying wrong | Conformity |
-| Contractor / builder | Power or Intelligence | Disrespect; being sold to | Investment / Necessity |
+| Contractor / builder | Strength/Power or Intelligence | Disrespect; being sold to | Investment / Necessity |
 | Owner-operator (trades) | Significance | Being dismissed as small-time | Investment |
 | Procurement | Intelligence | Blamed for a bad call | Conformity |
 | Homeowner, high-ticket | Approval or Acceptance | Rejection; making a fool of themselves | Social |
-| Founder / exec buyer | Significance or Power | Irrelevance; loss of control | Investment |
+| Founder / exec buyer | Significance or Strength/Power | Irrelevance; loss of control | Investment |
 
 ---
 
@@ -40,13 +41,13 @@ What each need requires from the copy, and what kills it.
 | **Acceptance** | In-group markers. Their vocabulary, their region, their trade. "You already know what a bad clip line costs you." | Outsider framing, generic corporate register. |
 | **Intelligence** | Give data and let them conclude. Specs, numbers, tradeoffs, the honest limitation. | Hype, adjectives, anything that reads as being sold to. This need punishes salesmanship hardest. |
 | **Pity** | Name the difficulty as real before the fix. "Nobody tells you the spec sheet is the bottleneck." | Skip to the solution. It reads as not having listened. |
-| **Power** | Give control and options. They decide, you supply. "Pull the numbers yourself." | Anything that reads as you steering. Urgency pressure inverts on this need. |
+| **Strength/Power** | Give control and options. They decide, you supply. "Pull the numbers yourself." | Anything that reads as you steering. Urgency pressure inverts on this need. |
 
 ---
 
-## Filter → reframe
+## Decision style → reframe
 
-Same true claim, four framings. Pick one and hold it.
+Same true claim, six framings. Pick one and hold it.
 
 Claim: *published span tables and CAD files on the site.*
 
@@ -56,10 +57,25 @@ Claim: *published span tables and CAD files on the site.*
 | **Conformity** | "Span and load data published to the same standard your inspector expects to see." |
 | **Investment** | "Twenty minutes per takeoff, every takeoff, for the life of the account." |
 | **Necessity** | "You cannot submit the drawing without the load table. Right now that's a phone call and a wait." |
+| **Deviance** | "Most suppliers still make you call for numbers. We put them on the page." |
+| **Novelty** | "Span tables your phone can read on site — new in this category." *(only if it is)* |
 
-Wrong filter is worse than a weak claim. A weak claim gets argued with; an irrelevant one gets skipped, and skipped means it never entered.
+Wrong decision style is worse than a weak claim. A weak claim gets argued with; an irrelevant one gets skipped, and skipped means it never entered.
 
 ---
+
+## Sentence-level tools from the 2026 research
+
+Detail and sources in [techniques.md](techniques.md) and [identity.md](identity.md).
+
+- **Statement before question.** Never open a section, an email or a hook with a bare question; lead with an alignment, resonance or concession statement (A-VD1).
+- **Dissociate.** Aim persuasive lines at "owners who…" or "most shops", not "you" (A-B8L 12:24).
+- **Two Legos.** Two true facts side by side, no "therefore" (D-DOAC-2 1:04).
+- **Name the category early, and make it boring.** "A risk problem", not "a growth opportunity" (A-PYf).
+- **Explain once.** The person who explains the most has the least power; justification invites negotiation (A; B).
+- **Comparison with "yet".** "It names two suppliers. Not you. Yet." keeps the gap closable (C-SRS 1:08).
+- **Borrow a trusted format.** An audit report, a spec sheet or an inspection checklist makes the reader run that format's "act on this" script (B).
+- **Identity beats scarcity.** "This is for shops that…" — with a real qualifier — instead of a deadline (B-1Ua).
 
 ## FATE at the sentence level
 

@@ -31,7 +31,7 @@ Each skill is self-contained — the SKILL.md tells Claude which other file to f
 
 | Skill | What it does |
 |---|---|
-| `chaseframe` | Chase Hughes' behavioral influence frameworks (FATE, the six social needs, decision filters) applied to copywriting, page layout, campaigns, and live sales calls. |
+| `chaseframe` | Chase Hughes' behavioral influence frameworks (FATE, the needs map, six decision styles, identity and commitment) applied to copywriting, Reels and video ads, page layout, campaigns, and live sales calls. |
 | `clientreview` | Client-facing AI Visibility Scorecard — scores a prospect /100 across six dimensions and shows the path to being recommended by AI assistants. |
 | `coldemail` | Researches a business from just its URL and drafts warm, human cold outreach pitching GEO / AI-visibility and website services. |
 | `personalreview` | Internal prospect review + quoting: fit check, prioritized jobs, good-better-best packages, and margin math. |
@@ -64,4 +64,4 @@ Its most-used feature is diagnostic rather than generative. When a page or campa
 | Engaged, never shortlisted | Tribe |
 | Shortlisted, then stalls forever | Emotion |
 
-Frameworks are sourced and tagged `[primary]` / `[secondary]` / `[contested]`, with disagreements between sources stated rather than smoothed over. The frameworks decide sequence, framing and emphasis — never whether a claim is true; the verified-claims rule applies to everything built with it.
+Frameworks are sourced from 46 primary videos (his own channel and 14 long-form podcasts) plus his written charts, and tagged `[primary-spoken]` / `[primary-written]` / `[versioned]` / `[contested]` / `[contested-science]`. Where he has changed his own system, or where independent research disputes a mechanism, that is stated rather than smoothed over — and `evidence.md` keeps a do-not-use list (behavioral lie detection, NLP eye cues, any Hughes statistic). The frameworks decide sequence, framing and emphasis — never whether a claim is true; the verified-claims rule applies to everything built with it.

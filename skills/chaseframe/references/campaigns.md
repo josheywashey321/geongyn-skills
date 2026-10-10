@@ -78,6 +78,33 @@ A funnel measured only at the last rung cannot tell you which of the first four 
 
 ---
 
+## Content series as identity building
+
+Hughes' mass-persuasion sequence is **Idea → Ideology → Identity**, sealed by public declaration (C; E), and his belief formula is **Focus, Emotion, Agitation, Repetition** (D-DOAC-1 1:44). For a content programme:
+
+- **Repeat one true idea across many posts.** Repetition is the mechanism, not a weakness. Vary the angle, keep the idea.
+- **Name one identity and keep naming it** ("owners who check before their competitors do"). Over weeks the audience starts to hold it; the CTA then confirms an identity instead of asking for a decision.
+- **Make the ask self-directed.** A comment keyword or DM is the buyer asking — the strongest rung (B-1Ua).
+
+## The feed cycle as a retargeting sequence
+
+He describes feeds as FATE at speed: a novelty clip, an authority figure, a tribe signal, an emotional clip, then an ad (D-DOAC-2 1:00; D-MW 0:09). Map a retargeting sequence onto the same order:
+
+| Touch | Rung | Asset |
+|---|---|---|
+| 1 | Focus | The organic Reel that earned the view |
+| 2 | Authority | The method shown — a live check, a teardown clip |
+| 3 | Tribe | Owners like them — anonymous, true |
+| 4 | Emotion → ask | The cost of waiting, then the offer with full expectancy (what happens next) |
+
+## Advertising's two jobs
+
+"Make you feel like you're not enough *yet*" and make you compare (C-SRS 1:08). The honest version is comparison against a real benchmark, with "yet" keeping it closable. Shame without a path burns the audience.
+
+## Community
+
+His "good cult" build for retention (E): an identity statement, insider language, a private assessment, unexpected bonuses, peer milestones, meetups, a shared ritual, an initiation letter. Legitimate when the identity is real and leaving is easy. See [identity.md](identity.md).
+
 ## Where urgency is legitimate
 
 Emotion is the rung most likely to tempt fabrication. The line:
@@ -87,5 +114,7 @@ Emotion is the rung most likely to tempt fabrication. The line:
 **Not** — countdown timers that reset, "2 spots left" when there are not, invented scarcity, fake recent-purchase notifications, statistics with no source.
 
 The honest version is almost always stronger, because it survives the question "how do you know?" The manufactured version dies the first time someone reloads the page, and takes the rest of the campaign's credibility with it. This is Geongyn's verified-claims rule and it applies to every asset built with this skill.
+
+**Identity beats scarcity** (B-1Ua): "this isn't for every shop", backed by a real qualifier, pulls harder than a timer and never collapses under a refresh.
 
 The strongest legitimate urgency is nearly always **the compounding cost of the status quo** — it is true by default, it is specific to them, and it does not expire.
