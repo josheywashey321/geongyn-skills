@@ -2,6 +2,8 @@
 
 Reels, Shorts, TikTok, Meta video ads, and the first 60 seconds of a VSL. Built from Hughes' 90-second capture map (A-B8L), the feed sequence (D-DOAC-2 1:00; D-MW 0:09), the six-axis model (A-uWq) and his identity work. Source codes are in [evidence.md](evidence.md).
 
+> **Geongyn's own Reels (since 2026-10-13):** the `/reelscript` skill's rules override this file. Hooks are adapted from proven hooks pulled fresh. No brand names; AI is never named or shown. No niche callouts in the hook. The ask is "DM me SCAN" in the pinned comment and caption, and is spoken only in sell videos, at the end. Credentials never go in the first seconds. Use this file for the persuasion psychology (FATE, needs, identity, the CTA order); take the concrete rules from `/reelscript`.
+
 **The organizing fact:** a feed is FATE run at speed — novelty, then an authority figure, then a tribe signal, then emotion, then an ad (D). A Reel that wants action runs the same four beats inside one video, and adds **expectancy**: the viewer knows exactly what happens if they act.
 
 ## Before writing a line
@@ -57,13 +59,13 @@ Every hook is a **statement first**. A bare question in the first line reads as 
 Use the compressed **Socialize → Minimize → Rationalize → Project** order (C-SRS 1:35), true statements only:
 
 > *Socialize* "The owners who check this first are the ones who get named."
-> *Minimize* "Comment SCAN. Two quick taps."
+> *Minimize* "DM me SCAN. Two quick taps."
 > *Rationalize* "Most owners haven't checked because nobody shows them this."
 > *Project + expectancy* "If it fits, you pick a time for a free 30-minute teardown."
 
 **Identity beats scarcity** (B-1Ua). "This isn't for every shop" does the work of a countdown timer honestly — when a real qualifier exists, as it does in a DM qualifier. Never invent a deadline or a "2 spots left".
 
-**Always offer the private route** in the same breath ("Comment SCAN, or DM me SCAN") — platform policy and lower friction.
+**Lead with the private route** ("DM me SCAN"): platforms demote comment bait, especially Facebook, and a DM is lower friction. A comment keyword can still trigger the same automation; just don't ask for comments out loud.
 
 ## Video-ad skeleton (the Infomercial Cascade)
 
@@ -96,18 +98,20 @@ From his own teardown of an infomercial (B-UQW 11:32): **capture focus → lead 
 - [ ] Every claim true and checkable; no Hughes statistic; no invented scarcity
 - [ ] **Ethics test:** if the viewer could see inside your head — your intent, your reasons — would they still agree to this? (E-DRVN 2:20)
 
-## Worked example — HVAC, ~45 seconds
+## Worked example: HVAC, ~45 seconds (framework illustration)
+
+> Written before 2026-10-13. It shows the six axes and the CTA order working together, **but for Geongyn's Reels it breaks the current rules**: it names a product, shows an AI answer on screen, puts credentials in the first seconds and opens with an early ask. Read it for the psychology; write real Reels with `/reelscript`.
 
 Segment: Significance / fear of being passed over unseen / Investment. Identity line: the owner who checks before the competitor does.
 
 > **HOOK:** Some of your no-heat calls never touch Google. *(still, unsmiling, calm)*
 > **JOSH:** I run AI-visibility checks for service companies. Watch who it names. *(authority in the first window; opens the loop)*
 > **VISUAL:** live, logged-out ChatGPT query — "furnace stopped, who should I call tonight in [town]" — names covered with solid blocks
-> **CTA:** Comment SCAN, or DM me SCAN — two taps and I'll tell you if a teardown makes sense.
+> **CTA:** DM me SCAN — two taps and I'll tell you if a teardown makes sense.
 > **JOSH:** There are three kinds of HVAC companies in these answers. Invisible. Named, but described wrong. And the one it recommends with a reason.
 > **JOSH:** *(Lego A, from the real query)* It named two shops. *(Lego B, from the same query)* Neither one has more reviews than the companies it left out. *(stop — don't connect them)*
 > **JOSH:** Nobody calls to tell you they went with the other shop. The phone just doesn't ring.
 > **JOSH:** The shops it names aren't better. They're easier for it to explain. Yet.
-> **CTA:** This isn't for every shop — it's for owners already doing real volume. Comment SCAN, or DM me SCAN. Two quick taps. If it fits, you pick a time.
+> **CTA:** This isn't for every shop — it's for owners already doing real volume. DM me SCAN. Two quick taps. If it fits, you pick a time.
 
 Fills Focus (hook), Expectancy (both CTAs spell out the steps), Connection (three types, resonance), Emotion (the silent phone). Lego B is only filmed if the live query makes it true on the day.
